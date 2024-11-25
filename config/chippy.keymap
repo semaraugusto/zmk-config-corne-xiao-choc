@@ -14,7 +14,8 @@
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     tapping-term-ms = <200>;
-                    quick-tap-ms = <0>;
+                    quick-tap-ms = <200>;
+                    require-prior-idle-ms = <125>;
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
@@ -26,6 +27,14 @@
                     flavor = "balanced";
                     bindings = <&kp>, <&kp>;
                 };
+                ht: hold_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    #binding-cells = <2>;
+                    flavor = "hold-preferred";
+                    tapping-term-ms = <400>;
+                    quick-tap-ms = <200>;
+                    bindings = <&kp>, <&kp>;
+                };
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -33,8 +42,8 @@
                 default_layer {
                         bindings = <
    &kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U          &kp I             &kp O           &kp P            &kp MINUS
-   &kp ESC           &hm LCTRL A   &hm LGUI S    &hm LALT D    &hm LSHIFT F  &kp G           &kp H         &kp J          &kp K             &kp L           &kp SEMI         &kp SQT
-   &kp LCTRL         &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M          &kp COMMA         &kp DOT         &kp FSLH         &kp RSHIFT
+   &ht LCTRL ESC     &hm LCTRL A   &hm LGUI S    &hm LALT D    &hm LSHIFT F  &kp G           &kp H         &kp J          &kp K             &kp L           &kp SEMI         &kp SQT
+   &kp LSHIFT        &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M          &kp COMMA         &kp DOT         &kp FSLH         &kp RSHIFT
                                                  &mo 1         &kp LGUI      &kp SPACE       &kp RET       &kp BSPC       &mo 2
                         >;
                 };
