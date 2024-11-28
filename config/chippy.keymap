@@ -57,9 +57,10 @@
 
                 lower_layer {
                         bindings = <
-   &kp GRAVE         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp N6        &kp N7        &kp N8    &kp N9     &kp N0      &kp MINUS
-   &ht LSHIFT ESC    &kp BSLH      &kp LBKT      &kp RBKT      &kp EQUAL     &kp MINUS      &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT  &kp COLON   &kp SQT
-   &kp LCTRL         &kp PIPE      &kp LBRC      &kp RBRC      &kp PLUS      &kp UNDER      &trans        &kp PG_DN     &kp PG_UP &trans     &kp FSLH    &kp RSHIFT
+   &kp GRAVE         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp N6        &kp N7        &kp N8    &kp LPAR   &kp RPAR    &kp MINUS
+   &ht LSHIFT ESC    &kp BSLH      &kp GRAVE     &kp LBRC      &kp RBRC      &kp EQUAL      &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT  &kp COLON   &kp SQT
+   &kp LCTRL         &kp PIPE      &kp TILDE     &kp LBKT      &kp RBKT      &kp PLUS       &trans        &kp PG_DN     &kp PG_UP &trans     &kp FSLH    &kp RSHIFT
+
                                                  &trans        &kp LGUI      &kp SPACE      &kp RET       &kp DEL       &mo 2
                         >;
                 };
@@ -67,8 +68,8 @@
                 raise_layer {
                         bindings = <
    &kp GRAVE        &kp N1        &kp N2       &kp N3         &kp N4        &kp N5          &kp N6        &kp N7        &kp N8      &kp N9    &kp N0     &kp MINUS
-   &ht LSHIFT ESC   &kp BSLH      &kp LBKT     &kp RBKT       &kp EQUAL     &kp MINUS       &kp EQUAL     &kp N4        &kp N5      &kp N6    &kp COLON  &kp GRAVE
-   &kp LCTRL        &kp PIPE      &kp LBRC     &kp RBRC       &kp PLUS      &kp UNDER       &kp PLUS      &kp N1        &kp N2      &kp N3    &kp FSLH   &kp RSHIFT
+   &ht LSHIFT ESC   &kp BSLH      &kp GRAVE    &kp LBRC       &kp RBRC      &kp EQUAL       &kp EQUAL     &kp N4        &kp N5      &kp N6    &kp COLON  &kp GRAVE
+   &kp LCTRL        &kp PIPE      &kp TILDE    &kp LBKT       &kp RBKT      &kp PLUS        &kp PLUS      &kp N1        &kp N2      &kp N3    &kp FSLH   &kp RSHIFT
                                                &mo 1          &kp LGUI      &kp SPACE       &kp RET       &kp BSPC      &trans
                         >;
                 };
