@@ -70,7 +70,7 @@
 
                 lower_layer {
                         bindings = <
-   &kp TAB           &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp           &kp N7        &kp N8    &kp N9      &kp N0       &kp MINUS
+   &caps_word        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp           &kp N7        &kp N8    &kp N9      &kp N0       &kp MINUS
    &kp ESC           &kp BSLH      &kp GRAVE     &kp LBRC      &kp RBRC      &kp EQUAL      &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT   &kp COLON    &kp DQT
    &kp LSHIFT        &kp PIPE      &kp TILDE     &kp LBKT      &kp RBKT      &kp PLUS       &kp PG_DN     &kp PG_UP     &kp COMMA &kp DOT     &kp FSLH    &kp RSHIFT
                                                  &kp LCTRL     &lt 1 ESC     &hm LGUI SPACE &kp RET       &lt 2 DEL     &kp RALT
