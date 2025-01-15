@@ -70,10 +70,10 @@
 
                 lower_layer {
                         bindings = <
-   &kp GRAVE         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp N6        &kp N7        &kp N8    &kp LPAR   &kp RPAR    &kp MINUS
-   &kp ESC           &kp BSLH      &kp GRAVE     &kp LBRC      &kp RBRC      &kp EQUAL      &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT  &kp COLON   &kp SQT
-   &kp LSHIFT        &kp PIPE      &kp TILDE     &kp LBKT      &kp RBKT      &kp PLUS       &trans        &kp PG_DN     &kp PG_UP &trans     &kp FSLH    &kp RSHIFT
-                                                 &kp LCTRL     &lt 1 ESC     &hm LGUI SPACE &kp RET       &lt 2 DEL     &kp RALT
+   &kp TAB           &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp N6        &kp N7        &kp N8    &kp N9     &kp N0      &kp MINUS
+   &kp ESC           &kp BSLH      &kp GRAVE     &kp LBRC      &kp RBRC      &kp EQUAL      &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT  &kp SEMI    &kp SQT
+   &trans            &kp PIPE      &kp TILDE     &kp LBKT      &kp RBKT      &kp PLUS       &kp PG_DN     &kp PG_UP     &kp COMMA &kp DOT    &kp FSLH    &kp RSHIFT
+                                                 &trans        &lt 1 ESC     &hm LGUI SPACE &kp RET       &lt 2 DEL     &kp RALT
                                                  // &kp LCTRL     &kp LGUI      &lt 1 SPACE    &lt 2 RET     &kp DEL       &kp RALT
                                                  // &trans        &kp LGUI      &kp SPACE      &kp RET       &kp DEL       &mo 2
                         >;
@@ -81,10 +81,10 @@
 
                 raise_layer {
                         bindings = <
-   &kp GRAVE         &kp N1        &kp N2       &kp N3         &kp N4        &kp N5          &kp N6        &kp N7        &kp N8      &kp N9    &kp N0     &kp MINUS
-   &kp ESC           &kp BSLH      &kp GRAVE    &kp LBRC       &kp RBRC      &kp EQUAL       &kp EQUAL     &kp N4        &kp N5      &kp N6    &kp COLON  &kp GRAVE
-   &kp LSHIFT        &kp PIPE      &kp TILDE    &kp LBKT       &kp RBKT      &kp PLUS        &kp PLUS      &kp N1        &kp N2      &kp N3    &kp FSLH   &kp RSHIFT
-                                                &kp LCTRL      &lt 1 ESC     &hm LGUI SPACE  &kp RET       &lt 2 BSPC    &kp RALT
+   &kp TAB           &kp N1        &kp N2       &kp N3         &kp N4        &kp N5          &kp N6        &kp N7        &kp N8      &kp N9    &kp N0     &kp MINUS
+   &kp ESC           &kp BSLH      &kp GRAVE    &kp LBRC       &kp RBRC      &kp EQUAL       &kp EQUAL     &kp N4        &kp N5      &kp N6    &kp SEMI   &kp SQT
+   &trans            &kp PIPE      &kp TILDE    &kp LBKT       &kp RBKT      &kp PLUS        &kp PLUS      &kp N1        &kp N2      &kp N3    &kp FSLH   &kp RSHIFT
+                                                &trans         &lt 1 ESC     &hm LGUI SPACE  &kp RET       &lt 2 BSPC    &kp RALT
                                                // &kp LCTRL      &kp LGUI      &lt 1 SPACE     &lt 2 RET     &kp BSPC      &kp RALT
                                                // &mo 1          &kp LGUI      &kp SPACE       &kp RET       &kp BSPC      &trans
                         >;
