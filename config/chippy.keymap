@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
 / {
         behaviors {
                 hm: homerow_mods {
@@ -36,9 +35,10 @@
                     quick-tap-ms = <200>;
                     bindings = <&kp>, <&kp>;
                 };
-                cw: caps_word {
+                prog_caps: prog_caps {
                     compatible = "zmk,behavior-caps-word";
-                    // continue-list = <UNDERSCORE MINUS>;
+                    #binding-cells = <0>;
+                    continue-list = <UNDERSCORE>;
                 };
         };
         conditional_layers {
@@ -70,7 +70,7 @@
 
                 lower_layer {
                         bindings = <
-   &cw               &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp           &kp N7        &kp N8    &kp N9      &kp N0       &kp MINUS
+   &kp TAB           &kp N1        &kp N2        &kp N3        &kp N4        &kp N5         &kp           &kp N7        &kp N8    &kp N9      &kp N0       &kp MINUS
    &kp ESC           &kp BSLH      &kp GRAVE     &kp LBRC      &kp RBRC      &kp EQUAL      &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT   &kp COLON    &kp DQT
    &kp LSHIFT        &kp PIPE      &kp TILDE     &kp LBKT      &kp RBKT      &kp PLUS       &kp PG_DN     &kp PG_UP     &kp COMMA &kp DOT     &kp FSLH    &kp RSHIFT
                                                  &kp LCTRL     &lt 1 ESC     &hm LGUI SPACE &kp RET       &lt 2 DEL     &kp RALT
