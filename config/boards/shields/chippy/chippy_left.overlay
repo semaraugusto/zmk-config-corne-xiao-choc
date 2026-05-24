@@ -6,11 +6,6 @@
 
 #include "chippy.dtsi"
 
-/* Required for Zephyr 4.1+: NFC pins used as GPIO (replaces CONFIG_NFCT_PINS_AS_GPIOS) */
-&uicr {
-	nfct-pins-as-gpios;
-};
-
 &kscan0 {
 	col-gpios
 		= <&gpio0 10 GPIO_ACTIVE_HIGH>   //Col0
