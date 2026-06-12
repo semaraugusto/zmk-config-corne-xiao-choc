@@ -24,33 +24,3 @@
 		, <&gpio0 10 GPIO_ACTIVE_HIGH>  //Col5
 		;
 };
-
-/ {
-	/*
-	 * Sideband bootloader trigger for right half.
-	 * Executes &bootloader locally on this MCU — works even without
-	 * a BLE connection to the left half.
-	 *
-	 * To flash: power on the right half, press the trigger key,
-	 * the XIAO-SENSE drive will appear. No reset button needed.
-	 *
-	 * Trigger key: row=3 col=2  →  the outermost right thumb key
-	 * (the key mapped to RALT in your default layer)
-	 * Change row/column here if you want a different key.
-	 */
-	sideband_behaviors: sideband_behaviors {
-		compatible = "zmk,kscan-sideband-behaviors";
-		auto-enable;
-		kscan = <&kscan0>;
-
-		bootloader_key {
-			row = <3>;
-			column = <2>;
-			bindings = <&bootloader>;
-		};
-	};
-};
-
-&chosen {
-	zmk,kscan = &sideband_behaviors;
-};

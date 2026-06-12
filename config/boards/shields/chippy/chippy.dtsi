@@ -49,6 +49,14 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 		compatible = "zmk,kscan-gpio-matrix";
 		wakeup-source;
 
+		// Anti-chatter debounce. Defaults are 5ms/5ms; a longer *release*
+		// window is the standard fix for switches that report phantom
+		// repeats (a brief contact bounce during a held key reads as
+		// release+repress). Raise debounce-release-ms further (e.g. 12-15)
+		// if a worn switch still chatters; lower if it adds noticeable lag.
+		debounce-press-ms = <5>;
+		debounce-release-ms = <8>;
+
 		diode-direction = "col2row";
 		row-gpios
 			= <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>

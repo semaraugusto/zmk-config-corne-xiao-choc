@@ -5,7 +5,12 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Pinned to a specific commit instead of `main` so the firmware is
+      # reproducible and doesn't drift onto in-flight (potentially unstable)
+      # changes between builds. Bump this deliberately when you want to update.
+      # NOTE: v0.3.0 (2025-08-01) predates the xiao_ble//zmk board migration
+      # this config relies on, so we pin to a recent main commit, not a tag.
+      revision: ff09f2d0c9f13a868c8f71d71d9348ade438e4b6
       import: app/west.yml
   self:
     path: config
